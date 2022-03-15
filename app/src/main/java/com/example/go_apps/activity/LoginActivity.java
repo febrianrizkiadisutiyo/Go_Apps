@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (password.getText().toString().toUpperCase().equals("TEST1")){
+                if (password.getText().toString().toUpperCase().equals("F1234")){
                     login_sukses();
                 } else {
                     Toast.makeText(getApplicationContext(),"salah Password",Toast.LENGTH_SHORT).show();
