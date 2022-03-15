@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.go_apps.databinding.FragmentGalleryBinding;
+import com.example.go_apps.databinding.FragmentDeveloperBinding;
 
 public class DeveloperFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentDeveloperBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DeveloperViewModel galleryViewModel =
                 new ViewModelProvider(this).get(DeveloperViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentDeveloperBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
+        final TextView textView = binding.textDeveloper;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

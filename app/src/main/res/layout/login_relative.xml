@@ -33,16 +33,16 @@
             android:textAlignment="center" />
 
         <EditText
-            android:autofillHints="@string/username"
             android:id="@+id/etUsername"
-            android:inputType="text"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvsilahkan"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/fab_margin"
+            android:autofillHints="@string/username"
             android:drawableStart="@drawable/ic_username"
             android:hint="@string/username"
+            android:inputType="text"
             android:minHeight="48dp"
             android:textAlignment="center" />
 
@@ -68,7 +68,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/btn_sign_in"
             android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck"/>
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/tvCreateAccount"
